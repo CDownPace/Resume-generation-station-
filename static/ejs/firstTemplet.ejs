@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+    .box{
+        width: 2200px;
+        height: 700px;
+        /* background-color: aqua; */
+        position: relative;
+        margin: 70px auto;
+        margin-left: 330px;
+    }
+    
+    #resume{
+        width: 600px;
+        height: 700px;
+        background-color: cadetblue;
+        border-right: 100px;
+        position: absolute
+        /* float: left; */
+        }
+        .firstresume{
+            /* margin: 200px auto; */
+            border: 1px solid black;
+            position: relative;
+        }
+        
+        .h1{
+            width: 100%;
+            height: 20px;
+            margin: 0 600px;
+            color:cadetblue;
+        }
+       .box .firstresume .left-box{
+           width: 200px;
+           height: 100%;
+           background-color:rgba(090 087 088);
+           /* position: relative; */
+       }
+       .box .firstresume .left-box .jianlizhao{
+           width: 120px;
+           height: 120px;
+           background-color: azure;
+           border-radius: 100%;
+           /* margin:20px; */
+           /* top:20px; */
+           /* position: absolute; */
+          /* margin-top: 0 auto; */
+          margin-left: 20px
+          /* top:20px; */
+          /* left: 20px; */
+          /* margin: 20px auto; */
+       }
+       .box .firstresume .left-box .blue-one-hang{
+           width: 100%;
+           height: 15px;
+           position: absolute;
+           top:250px;
+           background-color:rgba(001 160 235);
+           font-size: 4px;
+           color: white;
+       }
+       .box .firstresume .left-box .blue-two-hang{
+           width: 100%;
+           height: 15px;
+           position: absolute;
+           top:450px;
+           background-color:rgba(001 160 235);
+           font-size: 4px;
+           color: white;
+       }
+       .left-box h6{
+           margin: 0px;
+           padding: 0px;
+           color: white;
+       }
+       .left-box h4{
+           margin-left: 25px;
+           margin-top: 0px;
+           padding: 0px;
+           color: white;
+       }
+       .left-box h5{
+           margin: 0px;
+           padding: 0px;
+           color: white;
+       }
+       .box .firstresume .right-box{
+           width: 400px;
+           height: 100%;
+           background-color:blanchedalmond;
+           /* float: right; */
+           /* top:-100%; */
+           position: absolute;
+           top:0px;
+           left: 200px;
+       }
+       .box .firstresume .right-box .black-one-hang{
+           width: 350px;
+           height: 3px;
+           background-color:rgba(090 087 088);
+           position: absolute;
+           top:72px;
+       }
+       .box .firstresume .right-box .black-two-hang{
+           width: 350px;
+           height: 3px;
+           background-color:rgba(090 087 088);
+           position: absolute;
+           top:220px;
+       }
+       .box .firstresume .right-box .black-three-hang{
+           width: 350px;
+           height: 3px;
+           background-color:rgba(090 087 088);
+           position: absolute;
+           top:502px;
+       }
+       .right-box h6{
+      margin: 0px;
+           padding: 0px;
+           color: rgba(046 049 064);
+       }
+       .right-box h5{
+        margin: 0px;
+           padding: 0px;
+           color: rgba(046 049 064);
+       }
+
+       .box .secondresume .jianlizhao{
+           width: 80px;
+           height: 80px;
+           background-color: azure;
+           border-radius: 100%;
+           /* margin:20px; */
+           /* top:20px; */
+           /* position: absolute; */
+          /* margin-top: 0 auto; */
+          position: absolute;
+          left: 20px;
+         top: 20px;
+         
+          /* z-index: 100; */
+        
+          /* top:20px; */
+          /* left: 20px; */
+          /* margin: 20px auto; */
+       }
+       .box .secondresume .body-card{
+           width: 220px;
+           height: 80px;
+           background-color: rgba(001 160 235);
+           margin-top: 20px;
+           margin-left: 60px;
+       }
+      .name{
+        position: absolute;
+          left: 25px;
+          color: white;
+      }
+       .zhiwu{
+        position: absolute;
+        top:200px;
+        color: white;
+       }
+      .birthday{
+          position: absolute;
+          top:300px;
+          color: white;
+      }
+      .school{
+          position: absolute;
+          top:350px;
+          color: white;
+      }
+      .zhuanye{
+          position: absolute;
+          top:400px;
+          color: white;
+      }
+      .phone{
+          position: absolute;
+          top:500px;
+          color: white;
+      }
+      .youxiang{
+          position: absolute;
+          top:560px;
+          color: white;
+      }
+      .gerenpingjia{
+        position: absolute;
+          top:50px;
+          color: black;
+      }
+      .gerenpingjia-content{
+        position: absolute;
+          top:100px;
+          color: black;
+      }
+      .gongzuojingli{
+        position: absolute;
+          top:200px;
+          color: black;
+      }
+      .gongzuojingli-one-time{
+        position: absolute;
+          top:240px;
+          color: black;
+      }
+      .gongzuojingli-one-content{
+        position: absolute;
+          top:260px;
+          color: black;
+      }
+      .gongzuojingli-two-time{
+        position: absolute;
+          top:350px;
+          color: black;
+      }
+      .gongzuojingli-two-content{
+        position: absolute;
+          top:370px;
+          color: black;
+      }
+      .wuoderongyu{
+        position: absolute;
+          top:479px;
+          color: black;
+      }
+      .wuoderongyu-one-content{
+        position: absolute;
+          top:550px;
+          color: black;
+      }
+      .wuoderongyu-one-time{
+        position: absolute;
+          top:520px;
+          color: black;
+      }
+      .wuoderongyu-two-content{
+        position: absolute;
+          top:640px;
+          color: black;
+      }
+      .wuoderongyu-two-time{
+        position: absolute;
+          top:610px;
+          color: black;
+      }
+    </style>
+</head>
+<body>
+   
+    <div class="box">
+            <div id="resume" class="firstresume">
+                <!-- 第一个简历 -->
+                <div class="left-box">
+                    <!-- 左面部分 -->
+                   
+                            <div class="jianlizhao"></div>
+                            <!-- 简历照 -->
+                            <br>
+                          
+                       <div class="name"><%=  data.myname %></div>
+                       <br>
+                       <div class="zhiwu"><%=  data.quarters %></div>
+                       <br>
+                         <div class="blue-one-hang">基本信息</div>
+                         <div class="birthday">出生年月：<%=  data.birthday %></div>
+                         <br>
+                         <div class="school">毕业学校:<%=  data.graduateSchool %></div>
+                         <br>
+                         <div class="zhuanye">专业：<%=  data.major %></div>
+                         <br>
+                         <div class="blue-two-hang">联系方式</div>
+                         <div class="phone">手机：<%=   data.telephone %></div>
+                         <br>
+                         <div class="youxiang">邮箱:  
+                             <br>
+                             <%=  data.mailbox %></div>
+                    </div>
+                   <div class="right-box">
+                        <!-- 右面部分 -->
+                        <br>
+                        <div class="gerenpingjia">个人评价</div>
+                        
+                        <div class="black-one-hang"></div>
+                        <br>
+                        <div class="gerenpingjia-content"><%=  data.individualEvaluation %></div>
+                        <br>
+                        <div class="gongzuojingli">工作经历</div>
+                        
+                        <div class="black-two-hang"></div>
+                        <br>
+                        <div class="gongzuojingli-one-time"><%=  data.work1Time %></div>
+                        <div class="gongzuojingli-one-content"><%=  data.work1Content %></div>
+                        <br>
+                        <div class="gongzuojingli-two-time"><%=  data.work2Time %></div>
+                        <div class="gongzuojingli-two-content"><%=  data.work2Content %></div>
+                        <br>
+                        <div class="wuoderongyu">获得荣誉</div>
+                        <div class="black-three-hang"></div>
+                        <br>
+                        <div class="wuoderongyu-one-time">
+                                <%=  data.succe1Time %>
+                        </div>
+                        <div class="wuoderongyu-one-content"><%=  data.succe1Content %></div>
+                        <div class="wuoderongyu-two-time">
+                                <%=  data.succe2Time %>
+                            </div>
+                            <div class="wuoderongyu-two-content"><%=   data.succe2Content %></div>
+                    </div>
+                 
+                    
+                
+            </div>
+           
+    </div>
+    
+</body>
+</html>

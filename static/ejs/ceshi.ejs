@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+   
+</head>
+<body>
+   
+    <div class="box">
+            <div id="resume" class="firstresume">
+                <!-- 第一个简历 -->
+                <div class="left-box">
+                    <!-- 左面部分 -->
+                   
+                            <div class="jianlizhao"></div>
+                            <!-- 简历照 -->
+                            <br>
+                            <% information.forEach(function(e){ %>
+                       <div class="name"><%=  e.myname %></div>
+                       <br>
+                       <div class="zhiwu"><%=  e.quarters %></div>
+                       <br>
+                         <div class="blue-one-hang">基本信息</div>
+                         <div class="birthday">出生年月：<%=  e.birthday %></div>
+                         <br>
+                         <div class="school">毕业学校:<%=  e.graduateSchool %></div>
+                         <br>
+                         <div class="zhuanye">专业：<%=  e.major %></div>
+                         <br>
+                         <div class="blue-two-hang">联系方式</div>
+                         <div class="phone">手机：<%=   e.telephone %></div>
+                         <br>
+                         <div class="youxiang">邮箱:  
+                             <br>
+                             <%=  e.mailbox %></div>
+                    </div>
+                   <div class="right-box">
+                        <!-- 右面部分 -->
+                        <br>
+                        <div class="gerenpingjia">个人评价</div>
+                        
+                        <div class="black-one-hang"></div>
+                        <br>
+                        <div class="gerenpingjia-content"><%=  e.individualEvaluation %></div>
+                        <br>
+                        <div class="gongzuojingli">工作经历</div>
+                        
+                        <div class="black-two-hang"></div>
+                        <br>
+                        <div class="gongzuojingli-one-time"><%=  e.work1Time %></div>
+                        <div class="gongzuojingli-one-content"><%=  e.work1Content %></div>
+                        <br>
+                        <div class="gongzuojingli-two-time"><%=  e.work2Time %></div>
+                        <div class="gongzuojingli-two-content"><%=  e.work2Content %></div>
+                        <br>
+                        <div class="wuoderongyu">获得荣誉</div>
+                        <div class="black-three-hang"></div>
+                        <br>
+                        <div class="wuoderongyu-one-time">
+                                <%=  e.succe1Time %>
+                        </div>
+                        <div class="wuoderongyu-one-content"><%=  e.succe1Content %></div>
+                        <div class="wuoderongyu-two-time">
+                                <%=  e.succe2Time %>
+                            </div>
+                            <div class="wuoderongyu-two-content"><%=   e.succe2Content %></div>
+                    </div>
+                    <% }) %>
+                    
+                
+            </div>
+           
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,102 @@
+第一页
+     三个模板
+第二页       三块
+     点进入编辑样式
+第三页
+     编辑好以后生成
+
+
+
+
+
+
+填写信息的内容    第一个简历   
+姓名                 myname
+岗位                quarters
+出生年月           birthday
+毕业学校           graduateSchool
+专业               major
+手机               telephone
+邮箱               mailbox
+个人评价           individualEvaluation 
+工作经历1的时间     work1Time
+工作经历1的内容     work1Content
+工作经历2的时间     work2Time
+工作经历2的内容     work2Content
+获得荣誉1的时间     succe1Time
+获得荣誉1的内容      succe1Content
+获得荣誉2的时间     succe2Time
+获得荣誉2的内容     succe2Content
+
+
+
+
+填写信息的内容    第二个简历   
+姓名                 myname
+岗位                quarters
+手机               telephone
+邮箱               mailbox
+教育经历时间        graduateIime
+毕业学校           graduateSchool
+本科              major
+个人评价           individualEvaluation 
+实习经历1的时间     work1Time
+实习经历1的地点     work1Site
+实习经历1的内容     work1Content
+实习经历2的时间     work2Time
+实习经历2的地点     work2Site
+实习经历2的内容     work2Content
+
+获得荣誉1的时间     succe1Time
+获得荣誉1的内容      succe1Content
+获得荣誉2的时间     succe2Time
+获得荣誉2的内容     succe2Content
+
+个人技能1           skills1
+个人技能1内容        skills1Content
+个人技能2           skills2
+个人技能2内容        skills2Content
+个人技能3           skills3
+个人技能3内容       skills3Content
+
+
+
+
+填写信息的内容    第三个简历   
+姓名                 myname
+手机               telephone
+邮箱               mailbox
+求职岗位                quarters
+学历             educationalBackground
+专业                major
+毕业学校           graduateSchool
+期望薪资            expectedSalary
+获得嘉奖1的内容      succe1Content
+获得嘉奖2的内容      succe2Content
+获得嘉奖3的内容      succe3Content
+姓名                 myname
+性别                 sex
+
+
+求职岗位                quarters
+个人评价           individualEvaluation 
+教育经历时间        graduateIime
+教育经历            graduateContent
+实习经历1的时间     work1Time
+实习经历1的内容     work1Content
+实习经历2的时间     work2Time
+实习经历2的内容     work2Content
+兴趣爱好1            hobby1
+兴趣爱好2            hobby2
+兴趣爱好3            hobby3
+
+
+
+
+
+
+
+
+主页面     /           三张图片，选择一张
+填写信息页面   getInformate       
+最终生成页面   /third      形成最终简历

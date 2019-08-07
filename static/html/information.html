@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./jquery-3.3.1.min.js"></script>
+    <script src="./bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.css">
+    <style>
+    .box{
+        width: 1200px;
+        margin: 0 auto;
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="box">
+            <form method="POST" action="/getInformate">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">姓名</label>
+                      <input type="input" class="form-control" id="myname" name="myname" placeholder="姓名">
+                    </div>
+                    <div class="form-group">
+                            <label for="exampleInputEmail1">应聘岗位</label>
+                            <input type="input" class="form-control" id="quarters" name="quarters" placeholder="应聘岗位">
+                          </div>
+                          <div class="form-group">
+                                <label for="exampleInputEmail1">出生年月</label>
+                                <input type="input" class="form-control" id="birthday"  name="birthday" placeholder="出生年月">
+                              </div>
+                              <div class="form-group">
+                                    <label for="exampleInputEmail1">毕业学校</label>
+                                    <input type="input" class="form-control" id="graduateSchool" name="graduateSchool"  placeholder="毕业学校">
+                                  </div>
+                                  <div class="form-group">
+                                        <label for="exampleInputEmail1">专业</label>
+                                        <input type="input" class="form-control" id="major" name=" major" placeholder="专业">
+                                      </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">联系方式</label>
+                      <input type="input" class="form-control" id="telephone" name="telephone"  placeholder="联系方式">
+                    </div>
+                    <div class="form-group">
+                            <label for="exampleInputPassword1">邮箱</label>
+                            <input type="email" class="form-control" id="mailbox" name="mailbox"  placeholder="邮箱">
+                          </div>
+                          <div class="form-group">
+                                <label for="exampleInputPassword1">个人评价</label>
+                                <textarea class="form-control" rows="3" name="individualEvaluation"></textarea>
+                              </div>
+                              <div class="form-group">
+                                    <label for="exampleInputPassword1">工作经历</label>
+                                    <input type="input" class="form-control" id="work1Time"name="work1Time"  placeholder="时间">
+                                    <br>
+                                    <textarea class="form-control" rows="3" name="work1Content"></textarea>
+                                    <br>
+                                    <input type="input" class="form-control" id="work2Time"name="work2Time"  placeholder="时间">
+                                    <br>
+                                    <textarea class="form-control" rows="3" name=" work2Content"></textarea>
+                                  </div>
+                                  <div class="form-group">
+                                        <label for="exampleInputPassword1">获得荣誉</label>
+                                        <input type="input" class="form-control" id="succe1Time" name="succe1Time" placeholder="时间">
+                                       <br>
+                                        <textarea class="form-control" rows="3" name="succe1Content" ></textarea>
+                                        <br>
+                                        <input type="input" class="form-control" id="succe2Time" name="succe2Time" placeholder="时间">
+                                        <br>
+                                        <textarea class="form-control" rows="3" name="succe2Content" ></textarea>
+                                      </div>
+                              
+                    
+                    <button type="submit" class="btn btn-default">提交</button>
+                  </form>
+
+    </div>
+       
+</body>
+</html>

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+   
+    <style>
+         body{
+            margin: 0;
+            padding: 0;
+        }
+    .box{
+        width: 1100px;
+        height: 500px;
+        /* background-color: aqua; */
+        position: relative;
+        margin: 70px auto;
+    }
+    
+    #resume{
+        width: 300px;
+        height: 500px;
+        background-color: cadetblue;
+        border-right: 100px;
+        position: absolute
+        /* float: left; */
+        }
+        .firstresume{
+            border-right: 100px;
+            border: 1px solid black;
+            position: relative;
+        }
+        .secondresume{
+            /* border-right: 100px; */
+            left: 400px;
+            border: 1px solid black;
+            position: relative;
+            background-color:thistle
+        }
+        .threeresume{
+            /* border-right: 100px; */
+            left: 800px;
+            border: 1px solid black;
+        }
+        .h1{
+            width: 100%;
+            height: 20px;
+            margin: 0 600px;
+            color:cadetblue;
+        }
+       .box .firstresume .left-box{
+           width: 100px;
+           height: 100%;
+           background-color:rgba(090 087 088);
+           /* position: relative; */
+       }
+       .box .firstresume .left-box .jianlizhao{
+           width: 60px;
+           height: 60px;
+           background-color: azure;
+           border-radius: 100%;
+           /* margin:20px; */
+           /* top:20px; */
+           /* position: absolute; */
+          /* margin-top: 0 auto; */
+          margin-left: 20px
+          /* top:20px; */
+          /* left: 20px; */
+          /* margin: 20px auto; */
+       }
+       .box .firstresume .left-box .blue-hang{
+           width: 100%;
+           height: 15px;
+           background-color:rgba(001 160 235);
+           font-size: 4px;
+           color: white;
+       }
+       .left-box h6{
+           margin: 0px;
+           padding: 0px;
+           color: white;
+       }
+       .left-box h4{
+           margin-left: 25px;
+           margin-top: 0px;
+           padding: 0px;
+           color: white;
+       }
+       .left-box h5{
+           margin: 0px;
+           padding: 0px;
+           color: white;
+       }
+       .box .firstresume .right-box{
+           width: 200px;
+           height: 100%;
+           background-color:blanchedalmond;
+           /* float: right; */
+           /* top:-100%; */
+           position: absolute;
+           top:0px;
+           left: 100px;
+       }
+       .box .firstresume .right-box .black-hang{
+           width: 180px;
+           height: 2px;
+           background-color:rgba(090 087 088);
+       }
+       .right-box h6{
+      margin: 0px;
+           padding: 0px;
+           color: rgba(046 049 064);
+       }
+       .right-box h5{
+        margin: 0px;
+           padding: 0px;
+           color: rgba(046 049 064);
+       }
+
+       .box .secondresume .jianlizhao{
+           width: 80px;
+           height: 80px;
+           background-color: azure;
+           border-radius: 100%;
+           /* margin:20px; */
+           /* top:20px; */
+           /* position: absolute; */
+          /* margin-top: 0 auto; */
+          position: absolute;
+          left: 20px;
+         top: 20px;
+         
+          /* z-index: 100; */
+        
+          /* top:20px; */
+          /* left: 20px; */
+          /* margin: 20px auto; */
+       }
+       .box .secondresume .body-card{
+           width: 220px;
+           height: 80px;
+           background-color: rgba(001 160 235);
+           margin-top: 20px;
+           margin-left: 60px;
+       }
+       .box .secondresume h6{
+        margin: 0px;
+           padding: 0px;
+           color: rgba(046 049 064);
+       }
+       .box .secondresume h5{
+        margin: 0px;
+           padding: 0px;
+           color: rgba(046 049 064);
+       }
+       .box .secondresume h4{
+        margin: 0px;
+           padding: 0px;
+           color: rgba(046 049 064);
+       }
+       .box .secondresume .white-hang{
+           width: 200px;
+           height: 2px;
+           background-color: #fff;
+       }
+       .box .secondresume .left-fenbu-kuai{
+        position: absolute;
+        top:110px;
+           width: 120px;
+           height: 100px;
+
+       }
+       .box .secondresume .right-fenbu-kuai{
+        width: 150px;
+        position: absolute;
+        left: 150px;
+        top:310px;
+       }
+       .box .secondresume .left-fenbu-kuai2{
+        position: absolute;
+        top:310px;
+           width: 120px;
+           height: 100px;
+
+       }
+       .box .secondresume .right-fenbu-kuai2{
+        width: 150px;
+        position: absolute;
+        left: 150px;
+        top:110px;
+       }
+       .box .secondresume .black-hang{
+           width: 100px;
+           height: 2px;
+           background-color: slategrey
+       }
+    </style>
+</head>
+
+<body>
+    <div class="h1">
+        <h1>选择模板，填写简历</h1>
+</div>
+
+<div class="box">
+        <div id="resume" class="firstresume">
+            <!-- 第一个简历 -->
+            <div class="left-box">
+                <!-- 左面部分 -->
+               
+                        <div class="jianlizhao"></div>
+                        <!-- 简历照 -->
+                        <br>
+                   <h4>彭于晏</h4>
+                   <br>
+                   <h5>项目经理/项目负责人</h5>
+                   <br>
+                     <div class="blue-hang">基本信息</div>
+                     <h6>出生年月：1997/03/20</h6>
+                     <br>
+                     <h6>毕业学校:北大</h6>
+                     <br>
+                     <h6>专业：计算机</h6>
+                     <br>
+                     <div class="blue-hang">联系方式</div>
+                     <h6>手机：18845245648</h6>
+                     <br>
+                     <h6>邮箱: 2468462795 @qq.com</h6>
+                </div>
+               <div class="right-box">
+                    <!-- 右面部分 -->
+                    <br>
+                    <h5>&nbsp&nbsp&nbsp&nbsp个人简历</h5>
+                    
+                    <div class="black-hang"></div>
+                    <br>
+                    <h6>&nbsp自我学习能力强，做事认真上进，专业知识扎实，能够独立完成工作，热爱生活，努力向上，热爱劳动，有团队意识</h6>
+                    <br>
+                    <h5>&nbsp&nbsp&nbsp&nbsp工作经历</h5>
+                    
+                    <div class="black-hang"></div>
+                    <br>
+                    <h6>&nbsp2013.03.25</h6>
+                    <h6>&nbsp能够独立完成工作，热爱生活，努力向上，热爱劳动，有团队意识</h6>
+                    <br>
+                    <h6>&nbsp2013.03.25</h6>
+                    <h6>&nbsp自我学习能力强，做事认真上进，专业知识扎实，能够独立完成工作，热爱生活，努力向上，热爱劳动，有团队意识</h6>
+                    <br>
+                    <h5>&nbsp&nbsp&nbsp&nbsp获得荣誉</h5>
+                    <div class="black-hang"></div>
+                    <br>
+                    <h6>&nbsp自我学习能力强，做事认真上进，专业知识扎实，能够独立完成工作，热爱生活，努力向上，热爱劳动，有团队意识</h6>
+                </div>
+               
+                
+            
+        </div>
+        <div id="resume" class="secondresume">
+                <div class="jianlizhao"></div>
+                <div class="body-card">
+                        <h4>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp彭于晏</h4>
+                        <h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp项目经理/项目负责人</h5>
+                        <div class="white-hang"></div>
+                        <h6>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp1884517629</h6>
+                        <h6>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp4716482194@qq.com</h6>
+                </div>
+                <div class="left-fenbu-kuai">
+                    <h5>教育经历</h5>
+                    <div class="black-hang"></div>
+                    <br>
+                    <h6>2016-2020</h6>
+                    <br>
+                    <h6>西南政法大学</h6>
+                    
+                    <h6>本科</h6>
+                   
+                    <h6>自我学习能力强，做事认真上进，专业知识扎实，能够独立完成工作，热爱生活，</h6>
+                </div>
+                <div class="right-fenbu-kuai">
+                        <h5>实习经历</h5>
+                        
+                        <div class="black-hang"></div>
+                        <br>
+                        <h6>2016-2020 &nbsp&nbsp&nbsp 中国银行</h6>
+                        <br>
+                        <h6>热爱生活，努力向上，热爱劳动，有团队意识</h6>
+                        <br>
+                        <h6>2016-2020 &nbsp&nbsp&nbsp 中国银行</h6>
+                        
+                        <h6>努力向上，热爱劳动，有团队意识</h6>
+                    </div>
+                    <div class="left-fenbu-kuai2">
+                            <h5>荣誉证书</h5>
+                            <div class="black-hang"></div>
+                            <br>
+                            <h6>2016-2020</h6>
+                            <h6>西南政法大学</h6>
+                            <h6>本科</h6>
+                            <h6>自我学习能力强，做事认真上进，专业知识扎实，能够独立完成工作，热爱生活，</h6>
+                        </div>
+                        <div class="right-fenbu-kuai2">
+                                <h5>个人技能</h5>
+                                
+                                <div class="black-hang"></div>
+                                <br>
+                                <h6>2016-2020 &nbsp&nbsp&nbsp 中国银行</h6>
+                                <br>
+                                <h6>热爱生活，努力向上，热爱劳动，有团队意识</h6>
+                                <br>
+                                <h6>2016-2020 &nbsp&nbsp&nbsp 中国银行</h6>
+                                
+                                <h6>努力向上，热爱劳动，有团队意识</h6>
+                            </div>
+        </div>
+        <div id="resume" class="threeresume">
+            
+        </div>
+</div>
+<script>
+// var one=$('.firstresume')
+var one=document.getElementsByClassName('firstresume')[0]
+var two=document.getElementsByClassName('secondresume')[0]
+var three=document.getElementsByClassName('threeresume')[0]  
+
+// var two=$('.secondresume')
+    // var three=$('.threeresume')
+    // one.on('click',function(){
+    //     getInformate()
+    // })
+    one.addEventListener('click',function(){
+        getInformate()
+    })
+var getInformate=function(){
+    $.ajax({
+        type:'get',
+        url:'/getInformate',
+        data:{},
+        success: function (e) {
+                console.log('getInformate Success')
+               
+            },
+            complete : function(e){
+                console.log(e)
+            }
+    })
+}
+
+
+
+
+
+
+</script>
+</body>
+
+</html>
